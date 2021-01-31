@@ -1,3 +1,3 @@
-# button-component
+# dev challenger
 
-plenty of button styles and states
+some of these challengers
