@@ -1,3 +1,3 @@
-# template-project
+# button-component
 
-template vue para playground
+plenty of button styles and states
