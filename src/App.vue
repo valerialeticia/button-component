@@ -2,88 +2,84 @@
   <v-app>
     <v-container>
       <v-main>
-        <h2>Buttons</h2>
+        <h2>Inputs</h2>
 
         <v-row class="my-5">
-          <v-col cols="12" lg="4" md="4">
-            <Button label="Default" />
+          <v-col cols="12" lg="3" md="3">
+            <Input label="Label" :outlined="true" />
           </v-col>
         </v-row>
 
         <v-row class="my-5">
-          <v-col cols="12" lg="4" md="4">
-            <Button label="Default" :outlined="true" color="indigo accent-4" />
+          <v-col cols="12" lg="3" md="3">
+            <Input label="Label" :outlined="true" :error="true" />
           </v-col>
         </v-row>
 
         <v-row class="my-5">
-          <v-col cols="12" lg="4" md="4">
-            <Button label="Default" :text="true" color="indigo accent-4" />
+          <v-col cols="12" lg="3" md="3">
+            <Input label="Label" :outlined="true" :disabled="true" />
           </v-col>
         </v-row>
 
       <v-row class="my-5">
-        <v-col cols="12" lg="4" md="4">
-          <Button label="Default" elevation="0" color="indigo accent-4" :dark="true" />
+         <v-col cols="12" lg="3" md="3">
+            <Input label="Label" :outlined="true" messages="Some interesting text" />
+        </v-col>
+        <v-col cols="12" lg="3" md="3">
+          <Input label="Label" :outlined="true" :error="true" messages="Some interesting text" />
         </v-col>
       </v-row>
 
       <v-row class="my-5">
-        <v-col cols="12" lg="2" md="2">
-          <Button label="Default"  :disabled="true" />
+        <v-col cols="12" lg="3" md="3">
+          <Input label="Label" :outlined="true" prependInnerIcon="mdi-phone" />
         </v-col>
-        <v-col cols="12" lg="2" md="2">
-          <Button label="Default"  :disabled="true" :text="true" />
-        </v-col>
-      </v-row>
-
-      <v-row class="my-5">
-        <v-col cols="12" lg="2" md="2">
-          <Button label="Default" color="indigo accent-4"  iconLeft="mdi-cart-plus" :dark="true" />
-        </v-col>
-        <v-col cols="12" lg="2" md="2">
-          <Button label="Default" color="indigo accent-4"  iconRight="mdi-cart-plus" :dark="true" />
+        <v-col cols="12" lg="3" md="3">
+          <Input label="Label" :outlined="true" appendIcon="mdi-lock" />
         </v-col>
       </v-row>
 
       <v-row class="my-5">
-        <v-col cols="12" lg="2" md="2">
-          <Button label="Default" color="indigo accent-4" :dark="true" :small="true" />
-        </v-col>
-        <v-col cols="12" lg="2" md="2">
-          <Button label="Default" color="indigo accent-4"  :dark="true" />
-        </v-col>
-        <v-col cols="12" lg="2" md="2">
-          <Button label="Default" color="indigo accent-4" :dark="true" :large="true" />
+        <v-col cols="12" lg="3" md="3">
+          <Input message="Text" label="Label" :outlined="true" />
         </v-col>
       </v-row>
 
       <v-row class="my-5">
-        <v-col cols="12" lg="2" md="2">
-          <Button label="Default" color="grey"  />
+        <v-col cols="12" lg="3" md="3">
+          <Input message="Text" label="Label" :outlined="true" :dense="true" />
         </v-col>
-        <v-col cols="12" lg="2" md="2">
-          <Button label="Default" color="indigo accent-4"  :dark="true" />
-        </v-col>
-        <v-col cols="12" lg="2" md="2">
-          <Button label="Secondary" color="blue-grey darken-3" :dark="true" />
-        </v-col>
-        <v-col cols="12" lg="2" md="2">
-          <Button label="Danger" color="red darken-4" :dark="true" />
+        <v-col cols="12" lg="3" md="3">
+          <Input label="Label" :outlined="true" />
         </v-col>
       </v-row>
+
+      <v-row class="my-5">
+        <v-col cols="12">
+          <Input message="Text" label="Label" :outlined="true" />
+        </v-col>
+      </v-row>
+
+      <v-row class="my-5">
+        <v-col cols="12" lg="3" md="3">
+          <v-textarea rows="4" label="Label" outlined />
+        </v-col>
+      </v-row>
+
+      <span class="grey--text">Valéria Letícia @ DevChallenges.io</span>
       </v-main>
     </v-container>
   </v-app>
 </template>
 
 <script>
-import Button from './components/Button'
+import Input from './components/Input'
 export default {
-  name: 'Buttons',
+  name: 'Inputs',
 
   components: {
-    Button
+    Input
   }
 }
 </script>
